@@ -1,0 +1,20 @@
+<!-- Module: Career consultation CTA / form
+     Reusable HTML fragment. Tailwind CSS utility classes only.
+     This file is included in index.html as a copied section; plain HTML cannot import fragments by itself. -->
+<!-- Consultation CTA -->
+    <section id="consultation" class="bg-gradient-to-r from-violet-600 via-blue-600 to-sky-500 text-white">
+      <div class="mx-auto grid max-w-7xl gap-5 px-5 py-5 md:grid-cols-[1fr_1.25fr] md:items-center lg:px-8">
+        <div class="flex items-center gap-4"><div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/15 text-2xl">➤</div><div><p class="text-[9px] font-bold uppercase tracking-widest text-cyan-100">Take the First Step</p><h2 class="text-lg font-extrabold">Get Your Free Career Consultation</h2><p class="mt-1 text-[10px] text-blue-50">Talk to our experts and get personalized guidance for your career goals.</p></div></div>
+        <form id="consultForm" class="grid gap-2 sm:grid-cols-[1fr_1fr_auto]" method="dialog" data-demo-form>
+          <label for="consultName" class="sr-only">Your Name</label>
+          <input id="consultName" required name="name" autocomplete="name" placeholder="Your Name" class="min-w-0 rounded-md border border-white/50 bg-white px-3 py-2 text-xs text-slate-800 outline-none ring-blue-200 placeholder:text-slate-500 focus:ring-2"/>
+          <label for="consultEmail" class="sr-only">Your Email</label>
+          <input id="consultEmail" required name="email" type="email" autocomplete="email" placeholder="Your Email" class="min-w-0 rounded-md border border-white/50 bg-white px-3 py-2 text-xs text-slate-800 outline-none ring-blue-200 placeholder:text-slate-500 focus:ring-2"/>
+          <label for="consultCourse" class="sr-only">Select Course Interest</label>
+          <select id="consultCourse" required name="course" class="min-w-0 rounded-md border border-white/50 bg-white px-3 py-2 text-xs text-slate-700 outline-none focus:ring-2 focus:ring-blue-200 sm:col-span-2"><option value="">Select Course Interest</option><option>Career Guidance</option><option>IT &amp; Tech Training</option><option>Non-IT Training</option><option>Interview Preparation</option></select>
+          <button class="rounded-md bg-blue-700 px-4 py-2 text-[10px] font-bold shadow hover:bg-blue-800 sm:col-start-3 sm:row-span-2">Book a Free Session →</button>
+          <p class="text-sm text-white sm:col-span-3" data-demo-status role="status" aria-live="polite" aria-atomic="true"></p>
+        </form>
+      </div>
+    </section>
+  </main>

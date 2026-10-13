@@ -1,0 +1,19 @@
+<!-- Module: Header / navigation
+     Reusable HTML fragment. Tailwind CSS utility classes only.
+     This file is included in index.html as a copied section; plain HTML cannot import fragments by itself. -->
+<!-- Navigation -->
+  <header class="absolute inset-x-0 top-0 z-20 border-b border-white/10 bg-slate-950/30 text-white backdrop-blur-sm">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8" aria-label="Main navigation">
+      <a href="#home" class="flex items-center gap-2.5" aria-label="You Aspirant home">
+        <svg viewBox="0 0 64 48" class="h-10 w-12 shrink-0" aria-hidden="true"><path d="M3 13 31 2l29 11-29 12L3 13Z" fill="#20c9f4"/><path d="M14 20v13l17 9 18-9V20L31 28 14 20Z" fill="#2875ff"/><path d="M52 18v12h5V16l-5 2Z" fill="#20c9f4"/></svg>
+        <span class="leading-tight"><span class="block text-lg font-extrabold tracking-tight">You Aspirant</span><span class="block text-[9px] text-slate-300">Guidance Today · Success Tomorrow</span></span>
+      </a>
+      <div class="hidden items-center gap-5 text-[13px] font-medium lg:flex">
+        <a class="transition-colors hover:text-cyan-300 border-b-2 border-cyan-400 pb-4 pt-4 text-cyan-300" href="#home">Home</a>
+        <a class="transition-colors hover:text-cyan-300" href="#about">About</a><a class="transition-colors hover:text-cyan-300" href="#services">Services</a>
+        <a class="transition-colors hover:text-cyan-300" href="#impact">Success Stories</a><a class="transition-colors hover:text-cyan-300" href="#testimonials">Testimonials</a>
+        <a class="transition-colors hover:text-cyan-300" href="#blog">Blog</a>
+        <a href="#consultation" class="rounded-xl bg-bluebrand px-5 py-2.5 font-bold shadow-lg shadow-blue-600/20 hover:bg-blue-500">Get Started</a>
+      </div>
+    </nav>
+  </header>
